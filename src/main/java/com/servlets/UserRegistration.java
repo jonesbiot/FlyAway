@@ -25,13 +25,13 @@ public class UserRegistration extends HttpServlet {
 		String adno=request.getParameter("adno");
 		
 		//test details, printed
-				PrintWriter out = response.getWriter();
-				out.print(name);
-				out.print(email);
-				out.print(password);
-				out.print(phno);
-				out.print(adno);
-/**
+			//	PrintWriter out = response.getWriter();
+				//out.print(name);
+				//out.print(email);
+				//out.print(password);
+				//out.print(phno);
+				//out.print(adno);
+
 		HashMap<String,String> user=new HashMap<>();
 		user.put("email", email);
 		user.put("password", password);
@@ -55,7 +55,7 @@ public class UserRegistration extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("UserPage.jsp"); */
+		response.sendRedirect("UserPage.jsp"); 
 	}
 
 }
